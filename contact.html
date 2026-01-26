@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact Us – Step Ahead</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Get in touch with Step Ahead for staffing, RPO, and training solutions. Contact us to discuss your hiring or career requirements." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandRed: '#fd0212',
+            brandGold: '#ffb300',
+            charcoal: '#1E1810',
+          },
+          fontFamily: {
+            body: ['Roboto', 'sans-serif'],
+            heading: ['Raleway', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-body text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 w-full z-50 bg-white shadow">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="text-2xl font-heading text-brandRed font-bold">
+      Step Ahead
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm font-bold">
+      <a href="index.html" class="hover:text-brandRed">Home</a>
+      <a href="about.html" class="hover:text-brandRed">About</a>
+
+      <div class="relative group">
+        <span class="cursor-pointer hover:text-brandRed">Services</span>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 w-56">
+          <a href="rpo.html" class="block px-4 py-3 hover:bg-gray-100">RPO</a>
+          <a href="staffing.html" class="block px-4 py-3 hover:bg-gray-100">Professional Staffing</a>
+          <a href="training.html" class="block px-4 py-3 hover:bg-gray-100">Training & Development</a>
+        </div>
+      </div>
+
+      <a href="careers.html">Career With Us</a>
+      <a href="contact.html" class="text-brandRed">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="pt-32 pb-24 bg-charcoal text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="font-heading text-4xl md:text-5xl mb-6">
+      Contact <span class="text-brandGold">Us</span>
+    </h1>
+    <p class="text-lg md:text-xl">
+      Let’s start a conversation and build something great together.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+    <!-- Contact Info -->
+    <div class="space-y-8">
+      <div>
+        <h2 class="font-heading text-3xl mb-4">
+          Get in Touch
+        </h2>
+        <p>
+          Whether you’re looking for talent solutions, career opportunities,
+          or partnership discussions — we’re here to help.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <p><strong>Email:</strong> info@stepahead.com</p>
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Address:</strong><br>
+          Step Ahead Consulting Services<br>
+          India
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="bg-gray-100 p-8 rounded shadow">
+      <div class="mb-4">
+        <label class="block mb-2 font-bold">Name</label>
+        <input type="text" class="w-full border p-3 rounded" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2 font-bold">Email</label>
+        <input type="email" class="w-full border p-3 rounded" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2 font-bold">Message</label>
+        <textarea class="w-full border p-3 rounded h-32" required></textarea>
+      </div>
+
+      <button class="bg-brandRed text-white px-6 py-3 rounded font-bold w-full hover:bg-red-700">
+        Send Message
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= MAP SECTION ================= -->
+<section class="h-[400px] w-full">
+  <iframe
+    class="w-full h-full border-0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps?q=India&output=embed">
+  </iframe>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-charcoal text-white py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+    <div>
+      <h3 class="font-heading text-xl mb-4">Step Ahead</h3>
+      <p>
+        Connecting talent with opportunity through trusted workforce solutions.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Services</h4>
+      <ul class="space-y-2">
+        <li>RPO</li>
+        <li>Professional Staffing</li>
+        <li>Training & Development</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">Contact</h4>
+      <p>Email: info@stepahead.com</p>
+      <p>Phone: +91 XXXXX XXXXX</p>
+      <p>India</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
