@@ -22,8 +22,8 @@
         extend: {
           colors: {
             brandRed: '#fd0212',
-            brandGold: '#ffb300',
-            charcoal: '#1E1810',
+            brandOrange: '#ff9800',
+            brandYellow: '#ffeb3b',
           },
           fontFamily: {
             body: ['Roboto', 'sans-serif'],
@@ -35,21 +35,19 @@
   </script>
 </head>
 
-<body class="font-body text-gray-800">
+<body class="font-body text-gray-800 bg-brandYellow/20">
 
 <!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full z-50 bg-white shadow border-b transition-all">
+<header class="fixed top-0 w-full z-50 bg-white shadow border-b">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
     <!-- LOGO -->
-    <a href="index.html" class="flex items-center">
-      <div class="bg-white rounded-xl p-2 shadow-md hover:shadow-lg transition">
-        <img 
-          src="step-ahead-logo.png"
-          alt="Step Ahead Consultancy Logo"
-          class="h-10 md:h-12 w-auto object-contain"
-        />
-      </div>
+    <a href="index.html">
+      <img 
+        src="step-ahead-logo.png"
+        alt="Step Ahead Consultancy Logo"
+        class="h-10 md:h-12"
+      />
     </a>
 
     <!-- NAV -->
@@ -60,9 +58,9 @@
       <div class="relative group">
         <span class="cursor-pointer hover:text-brandRed">Services</span>
         <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 w-56">
-          <a href="rpo.html" class="block px-4 py-3 hover:bg-gray-100">RPO</a>
-          <a href="staffing.html" class="block px-4 py-3 hover:bg-gray-100">Professional Staffing</a>
-          <a href="training.html" class="block px-4 py-3 hover:bg-gray-100">Training & Development</a>
+          <a href="rpo.html" class="block px-4 py-3 hover:bg-brandYellow/40">RPO</a>
+          <a href="staffing.html" class="block px-4 py-3 hover:bg-brandYellow/40">Professional Staffing</a>
+          <a href="training.html" class="block px-4 py-3 hover:bg-brandYellow/40">Training & Development</a>
         </div>
       </div>
 
@@ -73,19 +71,15 @@
 </header>
 
 <!-- ================= HERO SECTION ================= -->
-<section class="h-screen bg-charcoal flex items-center justify-center relative pt-24">
-  <div class="absolute inset-0 bg-black/60"></div>
+<section class="h-screen flex items-center justify-center relative pt-24
+               bg-gradient-to-r from-brandOrange to-brandYellow">
+  <div class="absolute inset-0 bg-orange-500/40"></div>
 
   <div class="relative text-center text-white px-6 max-w-5xl">
-    
-    <img 
-      src="step-ahead-logo.png"
-      alt="Step Ahead Consultancy"
-      class="mx-auto mb-6 h-20 md:h-24 drop-shadow-xl"
-    />
+    <img src="step-ahead-logo.png" class="mx-auto mb-6 h-20 md:h-24">
 
     <h1 class="font-heading text-4xl md:text-6xl mb-6">
-      <span class="text-brandGold">Empowering</span> Careers
+      <span class="text-white drop-shadow-lg">Empowering Careers</span>
     </h1>
 
     <p class="text-lg md:text-xl mb-10">
@@ -93,10 +87,12 @@
     </p>
 
     <div class="flex justify-center gap-4">
-      <a href="contact.html" class="bg-brandRed px-8 py-3 rounded text-white font-bold hover:bg-red-700 transition">
+      <a href="contact.html"
+         class="bg-brandRed px-8 py-3 rounded text-white font-bold hover:bg-red-700 transition">
         Get Started
       </a>
-      <a href="contact.html" class="border border-white px-8 py-3 rounded hover:bg-white hover:text-black transition">
+      <a href="contact.html"
+         class="border border-white px-8 py-3 rounded hover:bg-white hover:text-black transition">
         Talk to Us
       </a>
     </div>
@@ -104,27 +100,27 @@
 </section>
 
 <!-- ================= SERVICES ================= -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-brandYellow/40">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="font-heading text-3xl text-center mb-12">
+    <h2 class="font-heading text-3xl text-center mb-12 text-orange-800">
       Our Core Services
     </h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-8 border rounded hover:shadow-xl transition">
-        <div class="text-brandRed text-4xl mb-4">👥</div>
+      <div class="p-8 bg-white rounded shadow hover:shadow-xl transition">
+        <div class="text-brandOrange text-4xl mb-4">👥</div>
         <h3 class="font-heading text-xl mb-3">Professional Staffing</h3>
         <p>Executive search, specialized hiring, and contract staffing solutions.</p>
       </div>
 
-      <div class="p-8 border rounded hover:shadow-xl transition">
-        <div class="text-brandRed text-4xl mb-4">🔄</div>
+      <div class="p-8 bg-white rounded shadow hover:shadow-xl transition">
+        <div class="text-brandOrange text-4xl mb-4">🔄</div>
         <h3 class="font-heading text-xl mb-3">Recruitment Process Outsourcing</h3>
         <p>End-to-end recruitment ownership with speed and scalability.</p>
       </div>
 
-      <div class="p-8 border rounded hover:shadow-xl transition">
-        <div class="text-brandRed text-4xl mb-4">🎓</div>
+      <div class="p-8 bg-white rounded shadow hover:shadow-xl transition">
+        <div class="text-brandOrange text-4xl mb-4">🎓</div>
         <h3 class="font-heading text-xl mb-3">Training & Development</h3>
         <p>Workforce upskilling and leadership development programs.</p>
       </div>
@@ -133,19 +129,19 @@
 </section>
 
 <!-- ================= LEAD FORM ================= -->
-<section class="py-20 bg-gray-100">
+<section class="py-20 bg-brandOrange/20">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
     <div>
-      <h2 class="font-heading text-3xl mb-4">Let’s Build Your Team</h2>
+      <h2 class="font-heading text-3xl mb-4 text-orange-800">Let’s Build Your Team</h2>
       <p>Share your hiring requirements and our experts will connect with you.</p>
     </div>
 
     <form class="bg-white p-8 shadow rounded">
-      <input type="text" placeholder="Name" class="w-full border p-3 mb-4" required>
-      <input type="email" placeholder="Email" class="w-full border p-3 mb-4" required>
-      <input type="tel" placeholder="Phone" class="w-full border p-3 mb-4" required>
+      <input type="text" placeholder="Name" class="w-full border p-3 mb-4">
+      <input type="email" placeholder="Email" class="w-full border p-3 mb-4">
+      <input type="tel" placeholder="Phone" class="w-full border p-3 mb-4">
       <textarea placeholder="Message" class="w-full border p-3 mb-4"></textarea>
-      <button class="bg-brandRed text-white px-6 py-3 rounded w-full font-bold hover:bg-red-700 transition">
+      <button class="bg-brandRed text-white px-6 py-3 rounded w-full font-bold hover:bg-red-700">
         Submit
       </button>
     </form>
@@ -159,21 +155,20 @@
 </a>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-charcoal text-white py-12">
+<footer class="bg-brandOrange text-white py-12">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-    
     <div>
-      <img src="step-ahead-logo.png" alt="Step Ahead Consultancy" class="h-12 mb-4">
+      <img src="step-ahead-logo.png" class="h-12 mb-4">
       <p>Bridging the gap between talent and opportunity.</p>
     </div>
 
     <div>
       <h4 class="font-bold mb-4">Quick Links</h4>
       <ul class="space-y-2">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Contact</li>
       </ul>
     </div>
 
@@ -187,21 +182,26 @@
     </div>
 
     <div>
-      <h4 class="font-bold mb-4">Contact</h4>
-      <p>
-        Email:
-        <a href="mailto:stepaheadconsultancyrecruit@gmail.com" class="text-brandGold">
-          stepaheadconsultancyrecruit@gmail.com
-        </a>
-      </p>
-      <p>
-        Phone:
-        <a href="tel:+919848944860" class="text-brandGold">
-          +91 98489 44860
-        </a>
-      </p>
-      <p>India</p>
-    </div>
+  <h4 class="font-bold mb-4">Contact</h4>
+
+  <p class="mb-2">
+    Email:
+    <a href="mailto:stepaheadconsultancyrecruit@gmail.com"
+       class="text-brandYellow hover:underline">
+      stepaheadconsultancyrecruit@gmail.com
+    </a>
+  </p>
+
+  <p class="mb-2">
+    Phone:
+    <a href="tel:+919848944860"
+       class="text-brandYellow hover:underline">
+      +91 98489 44860
+    </a>
+  </p>
+
+  <p>India</p>
+</div>
 
   </div>
 </footer>
