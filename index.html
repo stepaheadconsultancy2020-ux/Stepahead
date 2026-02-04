@@ -38,16 +38,18 @@
 <body class="font-body text-gray-800">
 
 <!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur shadow transition-all">
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur shadow border-b border-white/30 transition-all">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
     <!-- LOGO -->
     <a href="index.html" class="flex items-center">
-      <img 
-        src="step-ahead-logo.png"
-        alt="Step Ahead Consultancy Logo"
-        class="h-12 md:h-14 w-auto"
-      />
+      <div class="bg-white rounded-xl p-2 shadow-md hover:shadow-lg transition">
+        <img 
+          src="step-ahead-logo.png"
+          alt="Step Ahead Consultancy Logo"
+          class="h-10 md:h-12 w-auto object-contain"
+        />
+      </div>
     </a>
 
     <!-- NAV -->
@@ -71,10 +73,18 @@
 </header>
 
 <!-- ================= HERO SECTION ================= -->
-<section class="h-screen bg-charcoal flex items-center justify-center relative">
+<section class="h-screen bg-charcoal flex items-center justify-center relative pt-20">
   <div class="absolute inset-0 bg-black/60"></div>
 
   <div class="relative text-center text-white px-6 max-w-5xl">
+    
+    <!-- HERO LOGO -->
+    <img 
+      src="step-ahead-logo.png"
+      alt="Step Ahead Consultancy"
+      class="mx-auto mb-6 h-20 md:h-24 drop-shadow-xl"
+    />
+
     <h1 class="font-heading text-4xl md:text-6xl mb-6">
       <span class="text-brandGold">Empowering</span> Careers
     </h1>
@@ -84,10 +94,10 @@
     </p>
 
     <div class="flex justify-center gap-4">
-      <a href="contact.html" class="bg-brandRed px-8 py-3 rounded text-white font-bold hover:bg-red-700">
+      <a href="contact.html" class="bg-brandRed px-8 py-3 rounded text-white font-bold hover:bg-red-700 transition">
         Get Started
       </a>
-      <a href="contact.html" class="border border-white px-8 py-3 rounded hover:bg-white hover:text-black">
+      <a href="contact.html" class="border border-white px-8 py-3 rounded hover:bg-white hover:text-black transition">
         Talk to Us
       </a>
     </div>
@@ -136,7 +146,7 @@
       <input type="email" placeholder="Email" class="w-full border p-3 mb-4" required>
       <input type="tel" placeholder="Phone" class="w-full border p-3 mb-4" required>
       <textarea placeholder="Message" class="w-full border p-3 mb-4"></textarea>
-      <button class="bg-brandRed text-white px-6 py-3 rounded w-full font-bold">
+      <button class="bg-brandRed text-white px-6 py-3 rounded w-full font-bold hover:bg-red-700 transition">
         Submit
       </button>
     </form>
@@ -144,16 +154,17 @@
 </section>
 
 <!-- ================= WHATSAPP ================= -->
-<a href="https://wa.me/91XXXXXXXXXX"
-   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg">
+<a href="https://wa.me/919848944860"
+   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
   💬
 </a>
 
 <!-- ================= FOOTER ================= -->
 <footer class="bg-charcoal text-white py-12">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    
     <div>
-      <img src="images/step-ahead-logo.png" alt="Step Ahead Consultancy" class="h-12 mb-4">
+      <img src="step-ahead-logo.png" alt="Step Ahead Consultancy" class="h-12 mb-4">
       <p>Bridging the gap between talent and opportunity.</p>
     </div>
 
@@ -178,13 +189,23 @@
 
     <div>
       <h4 class="font-bold mb-4">Contact</h4>
-      <p>Email: info@stepahead.com</p>
-      <p>Phone: +91 XXXXX XXXXX</p>
+      <p>
+        Email:
+        <a href="mailto:stepaheadconsultancyrecruit@gmail.com" class="text-brandGold">
+          stepaheadconsultancyrecruit@gmail.com
+        </a>
+      </p>
+      <p>
+        Phone:
+        <a href="tel:+919848944860" class="text-brandGold">
+          +91 98489 44860
+        </a>
+      </p>
       <p>India</p>
     </div>
+
   </div>
 </footer>
 
 </body>
-
 </html>
