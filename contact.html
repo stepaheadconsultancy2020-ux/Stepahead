@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Contact Us – Step Ahead</title>
+  <title>Step Ahead Consultancy | Contact Us</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Get in touch with Step Ahead for staffing, RPO, and training solutions. Contact us to discuss your hiring or career requirements." />
+  <meta name="description" content="Contact Step Ahead Consultancy for jobs, training, and recruitment solutions." />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -22,8 +23,8 @@
         extend: {
           colors: {
             brandRed: '#fd0212',
-            brandGold: '#ffb300',
-            charcoal: '#1E1810',
+            brandOrange: '#ff9800',
+            brandYellow: '#ffeb3b',
           },
           fontFamily: {
             body: ['Roboto', 'sans-serif'],
@@ -35,14 +36,17 @@
   </script>
 </head>
 
-<body class="font-body text-gray-800">
+<body class="font-body text-gray-800 bg-brandYellow/20">
 
 <!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full z-50 bg-white shadow">
+<header class="fixed top-0 w-full z-50 bg-white shadow border-b">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <div class="text-2xl font-heading text-brandRed font-bold">
-      Step Ahead
-    </div>
+
+    <a href="index.html">
+      <img src="step-ahead-logo.png"
+           alt="Step Ahead Consultancy Logo"
+           class="h-10 md:h-12" />
+    </a>
 
     <nav class="hidden md:flex gap-8 text-sm font-bold">
       <a href="index.html" class="hover:text-brandRed">Home</a>
@@ -51,110 +55,109 @@
       <div class="relative group">
         <span class="cursor-pointer hover:text-brandRed">Services</span>
         <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 w-56">
-          <a href="rpo.html" class="block px-4 py-3 hover:bg-gray-100">RPO</a>
-          <a href="staffing.html" class="block px-4 py-3 hover:bg-gray-100">Professional Staffing</a>
-          <a href="training.html" class="block px-4 py-3 hover:bg-gray-100">Training & Development</a>
+          <a href="rpo.html" class="block px-4 py-3 hover:bg-brandYellow/40">RPO</a>
+          <a href="staffing.html" class="block px-4 py-3 hover:bg-brandYellow/40">Professional Staffing</a>
+          <a href="training.html" class="block px-4 py-3 hover:bg-brandYellow/40">Training & Development</a>
         </div>
       </div>
 
-      <a href="careers.html">Career With Us</a>
+      <a href="careers.html" class="hover:text-brandRed">Career With Us</a>
       <a href="contact.html" class="text-brandRed">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- ================= PAGE HERO ================= -->
-<section class="pt-32 pb-24 bg-charcoal text-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
-    <h1 class="font-heading text-4xl md:text-5xl mb-6">
-      Contact <span class="text-brandGold">Us</span>
+<!-- ================= CONTACT HERO ================= -->
+<section class="pt-32 pb-20 bg-gradient-to-r from-brandOrange to-brandYellow relative">
+  <div class="absolute inset-0 bg-orange-500/40"></div>
+
+  <div class="relative max-w-5xl mx-auto text-center text-white px-6">
+    <h1 class="font-heading text-4xl md:text-5xl mb-4">
+      Contact Us
     </h1>
-    <p class="text-lg md:text-xl">
-      Let’s start a conversation and build something great together.
+    <p class="text-lg">
+      We’re here to help with jobs, training, and recruitment solutions.
     </p>
   </div>
 </section>
 
-<!-- ================= CONTACT SECTION ================= -->
-<section class="py-20 bg-white">
+<!-- ================= CONTACT CONTENT ================= -->
+<section class="py-20">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
-    <!-- Contact Info -->
-    <div class="space-y-8">
-      <div>
-        <h2 class="font-heading text-3xl mb-4">
-          Get in Touch
-        </h2>
-        <p>
-          Whether you’re looking for talent solutions, career opportunities,
-          or partnership discussions — we’re here to help.
-        </p>
-      </div>
+    <!-- Contact Details -->
+    <div class="bg-white p-8 rounded shadow">
+      <h2 class="font-heading text-2xl mb-6 text-orange-800">
+        Get in Touch
+      </h2>
 
-      <div class="space-y-4">
-        <p><strong>Email:</strong> info@stepahead.com</p>
-        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-        <p><strong>Address:</strong><br>
-          Step Ahead Consulting Services<br>
-          India
-        </p>
-      </div>
+      <p class="mb-6">
+        Reach out to Step Ahead Consultancy and our team will connect with you shortly.
+      </p>
+
+      <p class="mb-4">
+        📧 Email:<br>
+        <a href="mailto:stepaheadconsultancyrecriut@gmail.com"
+           class="text-brandRed font-bold hover:underline">
+          stepaheadconsultancyrecriut@gmail.com
+        </a>
+      </p>
+
+      <p class="mb-6">
+        📞 Phone:<br>
+        <a href="tel:+919848944860"
+           class="text-brandRed font-bold hover:underline">
+          +91 98489 44860
+        </a>
+      </p>
+
+      <!-- Google Form Button -->
+      <a href="https://forms.gle/o8wKGRKKDsRFktyy5"
+         target="_blank"
+         class="inline-block bg-brandRed text-white px-8 py-4 rounded font-bold hover:bg-red-700 transition">
+        Fill Contact / Registration Form
+      </a>
     </div>
 
-    <!-- Contact Form -->
-    <form class="bg-gray-100 p-8 rounded shadow">
-      <div class="mb-4">
-        <label class="block mb-2 font-bold">Name</label>
-        <input type="text" class="w-full border p-3 rounded" required>
-      </div>
+    <!-- Info Box -->
+    <div class="bg-white p-8 rounded shadow">
+      <h2 class="font-heading text-2xl mb-6 text-orange-800">
+        Why Contact Us?
+      </h2>
 
-      <div class="mb-4">
-        <label class="block mb-2 font-bold">Email</label>
-        <input type="email" class="w-full border p-3 rounded" required>
-      </div>
-
-      <div class="mb-4">
-        <label class="block mb-2 font-bold">Message</label>
-        <textarea class="w-full border p-3 rounded h-32" required></textarea>
-      </div>
-
-      <button class="bg-brandRed text-white px-6 py-3 rounded font-bold w-full hover:bg-red-700">
-        Send Message
-      </button>
-    </form>
+      <ul class="space-y-4">
+        <li>✔ Job opportunities across industries</li>
+        <li>✔ Professional & contract staffing</li>
+        <li>✔ Training & upskilling programs</li>
+        <li>✔ Dedicated recruitment support</li>
+      </ul>
+    </div>
 
   </div>
 </section>
 
-<!-- ================= MAP SECTION ================= -->
-<section class="h-[400px] w-full">
-  <iframe
-    class="w-full h-full border-0"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps?q=India&output=embed">
-  </iframe>
-</section>
+<!-- ================= WHATSAPP ================= -->
+<a href="https://wa.me/919848944860"
+   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+  💬
+</a>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-charcoal text-white py-12">
+<footer class="bg-brandOrange text-white py-12">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
 
     <div>
-      <h3 class="font-heading text-xl mb-4">Step Ahead</h3>
-      <p>
-        Connecting talent with opportunity through trusted workforce solutions.
-      </p>
+      <img src="step-ahead-logo.png" class="h-12 mb-4">
+      <p>Bridging the gap between talent and opportunity.</p>
     </div>
 
     <div>
       <h4 class="font-bold mb-4">Quick Links</h4>
       <ul class="space-y-2">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Contact</li>
       </ul>
     </div>
 
@@ -169,13 +172,66 @@
 
     <div>
       <h4 class="font-bold mb-4">Contact</h4>
-      <p>Email: info@stepahead.com</p>
-      <p>Phone: +91 XXXXX XXXXX</p>
+
+      <p class="mb-2">
+        Email:
+        <a href="mailto:stepaheadconsultancyrecriut@gmail.com"
+           class="text-brandYellow hover:underline">
+          stepaheadconsultancyrecriut@gmail.com
+        </a>
+      </p>
+
+      <p class="mb-2">
+        Phone:
+        <a href="tel:+919848944860"
+           class="text-brandYellow hover:underline">
+          +91 98489 44860
+        </a>
+      </p>
+
       <p>India</p>
     </div>
 
   </div>
 </footer>
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
