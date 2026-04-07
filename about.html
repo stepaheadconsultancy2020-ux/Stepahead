@@ -1,205 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About Us – Step Ahead</title>
+<title>About | Step Ahead Consultancy</title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Learn about Step Ahead – our mission, values, and commitment to bridging talent with opportunity through scalable hiring solutions." />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandRed: '#fd0212',
-            brandGold: '#ffb300',
-            charcoal: '#1E1810',
-          },
-          fontFamily: {
-            body: ['Roboto', 'sans-serif'],
-            heading: ['Raleway', 'sans-serif'],
-          }
-        }
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        maroon: '#7a0000',
+        yellowSoft: '#ffc107',
       }
     }
-  </script>
+  }
+}
+</script>
 </head>
 
-<body class="font-body text-gray-800">
+<body class="bg-white text-gray-700">
 
-<!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full z-50 bg-white shadow">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <div class="text-2xl font-heading text-brandRed font-bold">
-      Step Ahead
+<!-- HEADER (same as homepage) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="flex items-center gap-3">
+      <img src="step-ahead-logo.png" class="h-10">
+      <span class="font-bold text-maroon"></span>
     </div>
-
     <nav class="hidden md:flex gap-8 text-sm font-bold">
       <a href="index.html" class="hover:text-brandRed">Home</a>
-      <a href="about.html" class="text-brandRed">About</a>
+      <a href="about.html" class="hover:text-brandRed">About</a>
 
       <div class="relative group">
         <span class="cursor-pointer hover:text-brandRed">Services</span>
         <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 w-56">
-          <a href="rpo.html" class="block px-4 py-3 hover:bg-gray-100">RPO</a>
-          <a href="staffing.html" class="block px-4 py-3 hover:bg-gray-100">Professional Staffing</a>
-          <a href="training.html" class="block px-4 py-3 hover:bg-gray-100">Training & Development</a>
+          <a href="rpo.html" class="block px-4 py-3 hover:bg-brandYellow/40">RPO</a>
+          <a href="staffing.html" class="block px-4 py-3 hover:bg-brandYellow/40">Professional Staffing</a>
+          <a href="training.html" class="block px-4 py-3 hover:bg-brandYellow/40">Training & Development</a>
         </div>
       </div>
 
-      <a href="careers.html">Career With Us</a>
-      <a href="contact.html">Contact</a>
+      <a href="careers.html" class="hover:text-brandRed">Career With Us</a>
+      <a href="contact.html" class="hover:text-brandRed">Contact</a>
+      <a href="https://soomanyjobs.blogspot.com/" class="hover:text-brandRed">Our Blog</a>
+
     </nav>
+
   </div>
 </header>
 
-<!-- ================= PAGE HERO ================= -->
-<section class="pt-32 pb-24 bg-charcoal text-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
-    <h1 class="font-heading text-4xl md:text-5xl mb-6">
-      About <span class="text-brandGold">Step Ahead</span>
+<!-- HERO (same style as homepage) -->
+<section class="min-h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="text-center max-w-4xl px-6 fade-up">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      <span class="text-maroon">About</span><br>
+      <span class="text-yellowSoft">Step Ahead</span>
     </h1>
-    <p class="text-lg md:text-xl">
-      Bridging the gap between talent and opportunity.
+    <p class="mb-8">
+      Building careers, empowering businesses, and shaping future-ready teams.
     </p>
   </div>
 </section>
 
-<!-- ================= ABOUT CONTENT ================= -->
-<section class="py-20 bg-white">
-  <div class="max-w-4xl mx-auto px-6 space-y-10 leading-relaxed">
-
-    <p>
-      Step Ahead is a people-centric staffing and workforce solutions company committed to
-      connecting exceptional talent with forward-thinking organizations.
-      We believe that the right people, placed in the right roles, have the power to transform businesses and careers alike.
-    </p>
-
-    <p>
-      Our approach is built on deep industry understanding, strong recruitment expertise,
-      and a passion for helping organizations scale efficiently while empowering professionals
-      to grow, learn, and succeed in their careers.
-    </p>
-
-    <p>
-      Whether you are an organization seeking agile hiring solutions or a professional
-      looking for the next big opportunity, Step Ahead acts as a trusted partner at every stage.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= MISSION / VALUES ================= -->
-<section class="py-20 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-
-    <div class="bg-white p-8 rounded shadow">
-      <h3 class="font-heading text-xl mb-4 text-brandRed">
-        Our Mission
-      </h3>
-      <p>
-        To bridge the gap between talent and opportunity by delivering scalable,
-        efficient, and future-ready hiring solutions.
-      </p>
-    </div>
-
-    <div class="bg-white p-8 rounded shadow">
-      <h3 class="font-heading text-xl mb-4 text-brandRed">
-        Our Vision
-      </h3>
-      <p>
-        To become a trusted workforce partner for organizations and a career enabler
-        for professionals across industries.
-      </p>
-    </div>
-
-    <div class="bg-white p-8 rounded shadow">
-      <h3 class="font-heading text-xl mb-4 text-brandRed">
-        Our Values
-      </h3>
-      <ul class="list-disc pl-5 space-y-2">
-        <li>Integrity & transparency</li>
-        <li>People-first approach</li>
-        <li>Quality-driven execution</li>
-        <li>Long-term partnerships</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= WHY STEP AHEAD ================= -->
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="font-heading text-3xl text-center mb-12">
-      Why Choose Step Ahead?
+<!-- ABOUT -->
+<section class="py-24">
+  <div class="max-w-6xl mx-auto px-6 text-center fade-up">
+    <h2 class="text-4xl font-bold mb-8">
+      <span class="text-maroon">Who We</span>
+      <span class="text-yellowSoft"> Are</span>
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-10">
-      <ul class="space-y-4">
-        <li>✔ Industry-focused recruitment expertise</li>
-        <li>✔ Scalable hiring models for growing businesses</li>
-        <li>✔ Speed, quality, and cost efficiency</li>
-      </ul>
+    <p class="text-gray-600 leading-relaxed max-w-4xl mx-auto">
+      Step Ahead Consultancy is a trusted Human Resources organization specializing in
+      Recruitment Process Outsourcing (RPO), Professional Staffing, Training & Development,
+      and Business Consulting. We help organizations improve performance, scalability,
+      and competitiveness while supporting individuals in building successful careers.
+    </p>
+  </div>
+</section>
 
-      <ul class="space-y-4">
-        <li>✔ Dedicated client and candidate support</li>
-        <li>✔ End-to-end talent lifecycle management</li>
-        <li>✔ Commitment to long-term success</li>
-      </ul>
+<!-- SERVICES -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold mb-16 fade-up">
+      <span class="text-maroon">What We</span>
+      <span class="text-yellowSoft"> Do</span>
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="p-10 border rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition fade-up">
+        👥 <h3 class="text-maroon font-bold">Professional Staffing</h3>
+        <p>Providing skilled workforce solutions</p>
+      </div>
+
+      <div class="p-10 border rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition fade-up">
+        🔄 <h3 class="text-maroon font-bold">RPO Services</h3>
+        <p>End-to-end recruitment outsourcing</p>
+      </div>
+
+      <div class="p-10 border rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition fade-up">
+        🎓 <h3 class="text-maroon font-bold">Training</h3>
+        <p>Skill development & career growth</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-charcoal text-white py-12">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+<!-- PROCESS -->
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
 
-    <div>
-      <h3 class="font-heading text-xl mb-4">Step Ahead</h3>
-      <p>
-        Empowering careers and enabling organizations through strategic staffing solutions.
-      </p>
+    <h2 class="text-4xl font-bold mb-16 fade-up">
+      <span class="text-maroon">Our</span>
+      <span class="text-yellowSoft"> Process</span>
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="p-8 bg-white shadow rounded-xl fade-up">
+        <h3 class="text-maroon font-bold">Identify</h3>
+        <p>Matching candidates with company needs</p>
+      </div>
+
+      <div class="p-8 bg-white shadow rounded-xl fade-up">
+        <h3 class="text-maroon font-bold">Screen</h3>
+        <p>Shortlisting & background verification</p>
+      </div>
+
+      <div class="p-8 bg-white shadow rounded-xl fade-up">
+        <h3 class="text-maroon font-bold">Place</h3>
+        <p>Placement with follow-up support</p>
+      </div>
+
     </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
     <div>
-      <h4 class="font-bold mb-4">Quick Links</h4>
-      <ul class="space-y-2">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <h2 class="text-4xl font-bold mb-6">
+        <span class="text-maroon">Why Choose</span>
+        <span class="text-yellowSoft"> Us</span>
+      </h2>
+      <ul class="space-y-4">
+        <li>✔ Fast hiring</li>
+        <li>✔ Quality candidates</li>
+        <li>✔ Cost effective</li>
       </ul>
     </div>
 
-    <div>
-      <h4 class="font-bold mb-4">Services</h4>
-      <ul class="space-y-2">
-        <li>RPO</li>
-        <li>Professional Staffing</li>
-        <li>Training & Development</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="font-bold mb-4">Contact</h4>
-      <p>Email: info@stepahead.com</p>
-      <p>Phone: +91 XXXXX XXXXX</p>
-      <p>India</p>
+    <div class="grid grid-cols-2 gap-6 text-center">
+      <div class="p-6 bg-white shadow rounded-xl">500+ Clients</div>
+      <div class="p-6 bg-white shadow rounded-xl">10K+ Jobs</div>
+      <div class="p-6 bg-white shadow rounded-xl">95% Success</div>
+      <div class="p-6 bg-white shadow rounded-xl">24h Support</div>
     </div>
 
   </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-maroon text-white text-center">
+  <h2 class="text-4xl mb-6">Ready to Work With Us?</h2>
+  <a href="contact.html" class="bg-yellowSoft text-black px-8 py-3 rounded-xl">
+    Contact Now
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center border-t">
+  <h4 class="font-bold text-maroon">Step Ahead Consultancy</h4>
+
+  <p class="text-gray-500 mt-2">
+    Kaveri Queens Plaza, Tarnaka, Secunderabad
+  </p>
+
+  <p class="text-gray-500">📞 9160697424 | 9848944860</p>
+  <p class="text-gray-500">📧 info@soomanyjobs.com</p>
+
+  <p class="text-gray-500 mt-4">© 2026</p>
 </footer>
+
+<script>
+// animation (same as homepage)
+const observer = new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting) x.target.classList.add('show');
+  });
+});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
 
 </body>
 </html>
