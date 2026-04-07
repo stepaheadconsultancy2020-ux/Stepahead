@@ -1,54 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Step Ahead Consultancy | Contact Us</title>
+<title>Contact | Step Ahead Consultancy</title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Contact Step Ahead Consultancy for jobs, training, and recruitment solutions." />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandRed: '#fd0212',
-            brandOrange: '#ff9800',
-            brandYellow: '#ffeb3b',
-          },
-          fontFamily: {
-            body: ['Roboto', 'sans-serif'],
-            heading: ['Raleway', 'sans-serif'],
-          }
-        }
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        maroon: '#7a0000',
+        yellowSoft: '#ffc107',
       }
     }
-  </script>
+  }
+}
+</script>
 </head>
 
-<body class="font-body text-gray-800 bg-brandYellow/20">
+<body class="bg-white text-gray-700">
 
-<!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full z-50 bg-white shadow border-b">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="flex items-center gap-3">
+      <img src="step-ahead-logo.png" class="h-10">
+      <span class="font-bold text-maroon">Step Ahead</span>
+    </div>
 
-    <a href="index.html">
-      <img src="step-ahead-logo.png"
-           alt="Step Ahead Consultancy Logo"
-           class="h-10 md:h-12" />
-    </a>
-
-    <nav class="hidden md:flex gap-8 text-sm font-bold">
+   <nav class="hidden md:flex gap-8 text-sm font-bold">
       <a href="index.html" class="hover:text-brandRed">Home</a>
       <a href="about.html" class="hover:text-brandRed">About</a>
 
@@ -62,176 +61,122 @@
       </div>
 
       <a href="careers.html" class="hover:text-brandRed">Career With Us</a>
-      <a href="contact.html" class="text-brandRed">Contact</a>
+      <a href="contact.html" class="hover:text-brandRed">Contact</a>
+     <a href="https://soomanyjobs.blogspot.com/" class="hover:text-brandRed">Our Blog</a>
+
     </nav>
+
   </div>
 </header>
 
-<!-- ================= CONTACT HERO ================= -->
-<section class="pt-32 pb-20 bg-gradient-to-r from-brandOrange to-brandYellow relative">
-  <div class="absolute inset-0 bg-orange-500/40"></div>
-
-  <div class="relative max-w-5xl mx-auto text-center text-white px-6">
-    <h1 class="font-heading text-4xl md:text-5xl mb-4">
-      Contact Us
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="text-center max-w-4xl px-6 fade-up">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      <span class="text-maroon">Contact</span><br>
+      <span class="text-yellowSoft">Us</span>
     </h1>
-    <p class="text-lg">
-      We’re here to help with jobs, training, and recruitment solutions.
+    <p class="mb-8">
+      We’re here to help you with jobs, training, and recruitment solutions.
     </p>
   </div>
 </section>
 
-<!-- ================= CONTACT CONTENT ================= -->
-<section class="py-20">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+<!-- CONTACT SECTION -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
-    <!-- Contact Details -->
-    <div class="bg-white p-8 rounded shadow">
-      <h2 class="font-heading text-2xl mb-6 text-orange-800">
-        Get in Touch
+    <!-- LEFT -->
+    <div class="fade-up">
+      <h2 class="text-4xl font-bold mb-8">
+        <span class="text-maroon">Get in</span>
+        <span class="text-yellowSoft"> Touch</span>
       </h2>
 
-      <p class="mb-6">
+      <p class="text-gray-600 mb-6">
         Reach out to Step Ahead Consultancy and our team will connect with you shortly.
       </p>
 
-      <p class="mb-4">
-        📧 Email:<br>
-        <a href="mailto:stepaheadconsultancyrecriut@gmail.com"
-           class="text-brandRed font-bold hover:underline">
-          stepaheadconsultancyrecriut@gmail.com
-        </a>
-      </p>
+      <!-- Address -->
+      <div class="mb-6">
+        <p class="font-bold text-maroon">📍 Address</p>
+        <p class="text-gray-600">
+          Kaveri Queens Plaza,<br>
+          Above Airtel Office,<br>
+          Tarnaka, Secunderabad
+        </p>
+      </div>
 
-      <p class="mb-6">
-        📞 Phone:<br>
-        <a href="tel:+919848944860"
-           class="text-brandRed font-bold hover:underline">
-          +91 98489 44860
-        </a>
-      </p>
+      <!-- Phone -->
+      <div class="mb-6">
+        <p class="font-bold text-maroon">📞 Phone</p>
+        <p class="text-gray-600">9848944860 | 9160697424</p>
+      </div>
 
-      <!-- Google Form Button -->
-      <a href="https://forms.gle/o8wKGRKKDsRFktyy5"
-         target="_blank"
-         class="inline-block bg-brandRed text-white px-8 py-4 rounded font-bold hover:bg-red-700 transition">
-        Fill Contact / Registration Form
-      </a>
+      <!-- Email -->
+      <div class="mb-6">
+        <p class="font-bold text-maroon">📧 Email</p>
+        <p class="text-gray-600">stepaheadconsultancyrecruit@gmail.com</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="tel:9848944860" class="bg-maroon text-white px-6 py-3 rounded-xl">
+          Call Now
+        </a>
+
+        <a href="https://wa.me/9848944860" target="_blank"
+           class="bg-green-500 text-white px-6 py-3 rounded-xl">
+          WhatsApp
+        </a>
+      </div>
     </div>
 
-    <!-- Info Box -->
-    <div class="bg-white p-8 rounded shadow">
-      <h2 class="font-heading text-2xl mb-6 text-orange-800">
-        Why Contact Us?
-      </h2>
-
-      <ul class="space-y-4">
-        <li>✔ Job opportunities across industries</li>
-        <li>✔ Professional & contract staffing</li>
-        <li>✔ Training & upskilling programs</li>
-        <li>✔ Dedicated recruitment support</li>
-      </ul>
+    <!-- RIGHT (MAP) -->
+    <div class="w-full h-[400px] rounded-xl overflow-hidden shadow fade-up">
+      <iframe 
+        src="https://www.google.com/maps?q=Tarnaka%20Secunderabad&output=embed"
+        width="100%" 
+        height="100%" 
+        style="border:0;"
+        loading="lazy">
+      </iframe>
     </div>
 
   </div>
 </section>
 
-<!-- ================= WHATSAPP ================= -->
-<a href="https://wa.me/919848944860"
-   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
-  💬
-</a>
+<!-- CTA -->
+<section class="py-20 bg-maroon text-white text-center">
+  <h2 class="text-4xl mb-6">Need Help? Let’s Talk</h2>
+  <a href="https://wa.me/919160697424"
+     class="bg-yellowSoft text-black px-8 py-3 rounded-xl">
+    Chat on WhatsApp
+  </a>
+</section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-brandOrange text-white py-12">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+<!-- FOOTER -->
+<footer class="py-10 text-center border-t">
+  <h4 class="font-bold text-maroon">Step Ahead Consultancy</h4>
 
-    <div>
-      <img src="step-ahead-logo.png" class="h-12 mb-4">
-      <p>Bridging the gap between talent and opportunity.</p>
-    </div>
+  <p class="text-gray-500 mt-2">
+    Kaveri Queens Plaza, Tarnaka, Secunderabad
+  </p>
 
-    <div>
-      <h4 class="font-bold mb-4">Quick Links</h4>
-      <ul class="space-y-2">
-        <li>Home</li>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Contact</li>
-      </ul>
-    </div>
+  <p class="text-gray-500">📞 9160697424 | 9848944860</p>
+  <p class="text-gray-500">📧 info@soomanyjobs.com</p>
 
-    <div>
-      <h4 class="font-bold mb-4">Services</h4>
-      <ul class="space-y-2">
-        <li>RPO</li>
-        <li>Professional Staffing</li>
-        <li>Training & Development</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="font-bold mb-4">Contact</h4>
-
-      <p class="mb-2">
-        Email:
-        <a href="mailto:stepaheadconsultancyrecriut@gmail.com"
-           class="text-brandYellow hover:underline">
-          stepaheadconsultancyrecriut@gmail.com
-        </a>
-      </p>
-
-      <p class="mb-2">
-        Phone:
-        <a href="tel:+919848944860"
-           class="text-brandYellow hover:underline">
-          +91 98489 44860
-        </a>
-      </p>
-
-      <p>India</p>
-    </div>
-
-  </div>
+  <p class="text-gray-500 mt-4">© 2026</p>
 </footer>
 
-<!-- Code injected by live-server -->
 <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
+const observer = new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting) x.target.classList.add('show');
+  });
+});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
 </script>
+
 </body>
 </html>
